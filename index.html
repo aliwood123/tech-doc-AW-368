@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Document Page</title>
+  <link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="https://use.typekit.net/hkm7qfz.css">
+  </head>
+  <body>
+  <main id="main-doc">
+    <div class="core-doc">
+    <section class="main-section" id="Introduction">
+    <header class="section-title">Introduction</header>
+    <p class="description">Macarons are delicate French cookies made from egg whites, almond flour, and sugar. This guide will walk you through all the technical details necessary to create the perfect macaron. Whether you're a beginner or a seasoned baker, these steps will ensure your macarons are flawless.</p>
+    </section>
+    <section class="main-section" id="Ingredients">
+    <header class="section-title">Ingredients</header>
+    <p class="description">To make the perfect macaron, you need to gather the right ingredients. This section lists the essential components for both the macaron shell and the filling, ensuring that you have everything you need to start baking.</p>
+    <p class="section-subtitle">Macaron Shell</p>
+    <ul class="doc-list">
+      <li>110g powdered sugar</li>
+      <li>125g almond flour</li>
+      <li>100g egg whites (about 3 large eggs)</li>
+      <li>50g granulated sugar</li>
+      <li>1/4 tsp cream of tartar</li>
+      <li>1 tsp vanilla extract (optional)</li>
+      </ul>
+     <p class="section-subtitle">Macaron Filling</p>
+    <ul class="doc-list">
+      <li>100g softened butter</li>
+      <li>200g powdered sugar</li>
+      <li>1 tsp vanilla extract (or flavoring of choice)</li>
+      <li>1 tbsp heavy cream</li>
+      </ul>
+    </section>
+    <section class="main-section" id="Equipment">
+    <header class="section-title">Equipment</header>
+    <p class="description">Having the right equipment is essential for making macarons. This section covers all the tools you'll need, from mixers to piping bags, and explains their importance in achieving perfect results.</p>
+    <ul class="doc-list">
+      <li><strong>Stand mixer</strong> or <strong>hand mixer</strong> (for whipping egg whites)</li>
+      <li><strong>Sifter</strong> for dry ingredients (sifting powdered sugar and almond flour)</li>
+      <li><strong>Piping bag</strong> with a round tip (8mm)</li>
+      <li><strong>Baking tray</strong> lined with parchment paper or a silicone mat</li>
+      <li><strong>Offset spatula</strong> for filling</li>
+      <li><strong>Digital kitchen scale</strong> for accuracy</li>
+      <li><strong>Oven thermometer</strong> for temperature control</li>
+      </ul>
+      </section>
+    <section class="main-section" id="Macaronage_Process">
+    <header class="section-title">Macaronage Process</header>
+    <p class="description">This is the heart of macaron-making: preparing the meringue and folding it into the dry ingredients. In this section, we'll guide you through each step to ensure your batter has the perfect consistency.</p>
+    <p class="section-subtitle">Preparation of Dry Ingredients</p>
+    <p class="subsection-content">Sift powdered sugar and almond flour together at least twice to ensure there are no lumps.</p>
+    <p class="section-subtitle">Making the Meringue</p>
+    <p class="subsection-content">Whisk egg whites until frothy, add cream of tartar, and gradually add granulated sugar. Whip until stiff peaks form.</p>
+      <pre>
+   <code>
+   // Example: Whipping egg whites with sugar
+   mixer.whisk(eggWhites, mediumSpeed);
+   mixer.addSugarGradually(creamOfTartar);
+   mixer.whipUntil(StiffPeaks);
+   </code>
+</pre>
+  <p class="section-subtitle">Folding the Meringue with Dry Ingredients</p>
+  <p class="subsection-content">Fold the meringue into the sifted almond flour mixture gently until the batter is smooth and glossy.</p>
+  <pre>
+   <code>
+   // Folding meringue into dry ingredients
+   spatula.fold(meringue, dryIngredients);
+   batter.testSmoothness() ? continue : adjustConsistency();
+   </code>
+</pre>
+    </section>
+    <section class="main-section" id="Piping_and_Shaping">
+    <header class="section-title">Piping and Shaping</header>
+    <p class="description">Once your macaron batter is ready, the next step is piping and shaping the shells. This section will guide you on how to pipe uniform circles and give your macarons their perfect round shape.</p>
+    <p class="section-subtitle">Piping the Macaron Shells</p>
+    <p class="subsection-content">Pipe circles of batter onto the baking tray, each about 3 cm in diameter. Tap the tray gently on the counter to remove air bubbles.</p>
+      <pre>
+   <code>
+   // Piping the macaron shells
+   pipingBag.fill(batter);
+   pipedShells = tray.pipeCircles(size: 3cm);
+   tray.tapToRemoveBubbles();
+   </code>
+</pre>
+    <p class="section-subtitle">Resting the Piped Shells</p>
+    <p class="subsection-content">Allow the piped macarons to rest at room temperature for 30-60 minutes to form a skin.</p>
+   <pre>
+   <code>
+   // Resting the piped macarons
+   restTime = 60; // minutes
+   rest(tray, restTime);
+   </code>
+</pre>
+    </section>
+  <section class="main-section" id="Baking">
+    <header class="section-title">Baking</header>
+    <p class="description">Proper baking is essential for achieving the perfect macaron texture. In this section, we explain the ideal temperature and baking time to ensure your macarons bake evenly and develop their characteristic "feet."</p>
+    <p class="section-subtitle">Preheat the Oven</p>
+    <p class="subsection-content">Preheat the oven to 140°C (285°F). Use an oven thermometer to ensure accurate temperature.</p>
+    <p class="section-subtitle">Baking Time</p>
+    <p class="subsection-content">Bake macarons for 15–18 minutes. Rotate the tray halfway through for even baking.</p>
+   <pre class="doc-code">
+   <code>
+   // Baking the macarons
+   oven.preheat(140°C);
+   tray.bakeFor(15, 18, "minutes");
+   tray.rotateHalfway();
+   </code>
+</pre>
+</section>
+<section class="main-section" id="Filling_Variations">
+    <header class="section-title">Filling Variations</header>
+    <p class="description">Macaron fillings come in many delicious flavors. This section outlines a few popular filling options that pair perfectly with your macaron shells.</p>
+    <p class="section-subtitle">Classic Buttercream</p>
+    <p class="subsection-content">A simple buttercream made from butter, powdered sugar, and vanilla extract.</p>
+    <p class="section-subtitle">Chocolate Ganache</p>
+    <p class="subsection-content">Rich chocolate ganache made with heavy cream and dark chocolate for a decadent filling.</p>
+    <p class="section-subtitle">Fruit Flavored Buttercream</p>
+    <p class="subsection-content">Use fruit puree (e.g., raspberry, lemon) for a tangy, flavorful filling.</p>
+    </section>
+    <section class="main-section" id="Troubleshooting">
+    <header class="section-title">Troubleshooting</header>
+    <p class="description">Sometimes things don’t go as planned when making macarons. In this section, we address common problems like cracks or hollow shells and provide tips to fix them.</p>
+      <p class="section-subtitle">Common Problems</p>
+      <ul class="doc-list">
+        <li><strong>Cracks:</strong> Caused by overbaking or under-resting. Try reducing the oven temperature or increasing the resting time.</li>
+        <li><strong>Hollow shells:</strong> Overwhipped meringue. Reduce whipping time and check batter consistency.</li>
+      </ul>
+    </section>
+    <section class="main-section" id="Storage">
+    <header class="section-title">Storage</header>
+    <p class="description">Proper storage can extend the shelf life of your macarons. This section provides tips on how to store your macarons to keep them fresh and flavorful.</p>
+    <ul class="doc-list">
+      <li><strong>Aging:</strong> Macarons taste best after aging in an airtight container in the fridge for 24-48 hours.</li>
+      <li><strong>Freezing</strong> Can be frozen for up to 2 months. Wrap tightly in plastic and store in an airtight container.</li>
+    </ul>
+  </section>
+  <section class="main-section" id="Tips_for_Success">
+    <header class="section-title">Tips for Success</header>
+    <p class="description">Here are some additional tips to ensure your macaron-making process is smooth and successful. From measuring ingredients to avoiding humidity, these tips will help you troubleshoot and perfect your technique.<p>
+      <ul class="doc-list">
+        <li><strong>Measure Accurately:</strong> Always use a digital scale for precise measurements.</li>
+        <li><strong>Room Temperature Eggs:</strong> Allow egg whites to reach room temperature before whipping.</li>
+        <li><strong>Avoid Humidity:</strong> Bake on dry days for best results.</li>
+        </ul>
+      </section>
+    </div>
+    </main>
+    
+<!-- Navigation Code -->
+    
+    <nav id="navbar">
+      <header id="nav-title">The Perfect Macarons
+      <ul id="nav">
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Ingredients">Ingredients</a></li>
+        <li><a class="nav-link" href="#Equipment">Equipment</a></li>
+        <li><a class="nav-link" href="#Macaronage_Process">Macaronage Process</a></li>
+        <li><a class="nav-link" href="#Piping_and_Shaping">Piping and Shaping</a></li>
+        <li><a class="nav-link" href="#Baking">Baking</a></li>
+        <li><a class="nav-link" href="#Filling_Variations">Filling Variations</a></li>
+        <li><a class="nav-link" href="#Troubleshooting">Troubleshooting</a></li>
+        <li><a class="nav-link" href="#Storage">Storage</a></li>
+        <li><a class="nav-link" href="#Tips_for_Success">Tips for Success</a></li>
+      </ul>
+      </nav>
+    </body>
+  </html>
